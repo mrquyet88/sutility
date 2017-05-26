@@ -58,7 +58,7 @@ $.fn.extend({
 					var cur_selector = $(this).children();
 					cur_selector.removeAttr('style');
 					if(col > 1){
-						cur_selector.css({'float': 'left'});
+						cur_selector.css({'float': 'left', 'width': max_w + '%'});
 						cur_selector.each(function($i){
 							if( $i % col == 0){
 								from = $i;
@@ -83,6 +83,7 @@ $.fn.extend({
 										}
 									}
 									$(this).css($css);
+
 								}
 							})
 						})
