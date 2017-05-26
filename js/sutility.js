@@ -57,8 +57,8 @@ $.fn.extend({
 					var from = 0;
 					var cur_selector = $(this).children();
 					cur_selector.removeAttr('style');
-					cur_selector.css({'float': 'left'});
 					if(col > 1){
+						cur_selector.css({'float': 'left'});
 						cur_selector.each(function($i){
 							if( $i % col == 0){
 								from = $i;
